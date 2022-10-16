@@ -40,4 +40,3 @@ after_success:
   - docker push karim199260/udagram-api-user:v1
   - docker push karim199260/udagram-frontend:v1
   - docker push karim199260/udagram-reverseproxy:v1
-# Faites de même pour les trois autres images
