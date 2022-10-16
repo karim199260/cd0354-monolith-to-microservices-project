@@ -35,7 +35,7 @@ script:
 # Push
 # En supposant que DOCKER_PASSWORD et DOCKER_USERNAME sont définis dans les paramètres du dépôt Travis
 after_success:
-  - echo "$DOCKER_PASSWORD". | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push karim199260/udagram-api-feed:v1
   - docker push karim199260/udagram-api-user:v1
   - docker push karim199260/udagram-frontend:v1
